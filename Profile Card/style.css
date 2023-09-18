@@ -25,6 +25,16 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+.profile-card #love{
+  font-size: 80px;
+  color:grey;
+  opacity: 0.7;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: transform ease-in 0.3s;
+}
 .profile-card::before {
   content: "";
   position: absolute;
