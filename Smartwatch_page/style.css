@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b99073;
+  user-select: none;
+}
+.main {
+  width: 92%;
+  height: 85%;
+  background-color: #b99073;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3),
+    /* Outside shadow */ inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3); /* Inside shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.main #left {
+  width: 35%;
+  height: 100%;
+  background-color: #212725;
+  border-radius: 10px 50% 50% 10px;
+  overflow: hidden;
+  padding: 1.8rem;
+}
+.main #right {
+  width: 60%;
+  height: 100%;
+  background-color: #212725;
+  border-radius: 20rem 10px 10px 20rem;
+  overflow: hidden;
+  padding: 1.8rem;
+  position: relative;
+}
+.main #left #lnav {
+  display: flex;
+  align-items: center;
+  /* padding: 1.8rem; */
+  color: white;
+  gap: 2rem;
+}
+.main #left #lnav h3 {
+  font-weight: 700;
+}
+.main #left #lnav i {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main #right #rnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1.8rem; */
+  color: white;
+}
+.main #right #rnav #rnav1 {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 18rem;
+}
+.main #right #rnav #rnav1 #men {
+  border-bottom: 2px solid white;
+}
+.main #right #rnav #rnav2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 1.5rem;
+}
+.main #right #rnav #rnav2 i {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main #left #num {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin-left: 1.6rem; */
+  position: absolute;
+  top: 35%;
+  gap: 0.2px;
+}
+.main #left #num h1 {
+  font-size: 5rem;
+  color: white;
+}
+.main #left #num h2 {
+  font-size: 2rem;
+  color: white;
+  margin-left: 5px;
+}
+.main #left #line {
+  width: 6.8rem;
+  height: 7px;
+  background-color: #eb6c44;
+  position: absolute;
+  top: 42%;
+  left: 0;
+}
+.main #left #socials {
+  display: flex;
+  color: white;
+  gap: 1.5rem;
+  position: absolute;
+  bottom: 5%;
+}
+.main #left #socials i {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main #watch {
+  width: 23rem;
+  height: 23rem;
+  background-color: #b99073;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.main img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: scale-down;
+  object-position: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 37.5%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+}
+.main #right #rtext1 {
+  width: 20rem;
+  height: 30px;
+  display: flex;
+  /* background-color:red; */
+  align-items: center;
+  gap: 2rem;
+  margin-left: 12rem;
+  position: absolute;
+  top: 47%;
+  right: 56%;
+  z-index: 9999;
+  transform: rotate(-90deg);
+}
+.main #right #rtext1 #line {
+  width: 17rem;
+  height: 6px;
+  background-color: #ea6946;
+}
+.main #right #rtext1 h3 {
+  font-size: 1.2rem;
+  width: 100%;
+  color: #b5bab4;
+}
+.main #right #rtext2 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 20%;
+  top: 23%;
+}
+.main #right #rtext2 h1 {
+  font-size: 4.2rem;
+  font-weight: 100;
+  color: #b5bab4;
+  padding-bottom: 2rem;
+  line-height: 4rem;
+}
+.main #right #rtext2 span {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #dbdbd9;
+}
+.main #right #rtext2 h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b5bab4;
+  padding-bottom: 2rem;
+}
+.main #right #rtext2 #btn {
+  width: 12rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #444a4a;
+  background-color: #dbdbd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main #right #rtext3 {
+  width: 10rem;
+  height: 91.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 18%;
+  right: -3%;
+}
+.main #right #rtext3 h1 {
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  font-weight: 100;
+  color: #454b49;
+  font-family: "Protest Guerrilla", sans-serif;
+  letter-spacing: 10px;
+}
+.main #right #rtext3 i {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
+}
